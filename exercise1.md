@@ -20,4 +20,4 @@ There are other frameworks too, like "Buildbot" and "CircleCI", to name a few.
 
 ### Would this setup be better in a self-hosted or a cloud-based environment? Why? What information would you need to make that decision?
 
-It depends on the scale of the project, and also the purpose of the codebase. Doing machine learning with Python is one of the places, where specialized, on prem hardware resources could be a necessity. But for deploying a webservice (backend for a site for example) cloud deployement seems more natural.
+It depends on the scale of the project, and also the purpose of the codebase. Doing machine learning with Python is one of the places, where specialized, on prem hardware resources could be a necessity. But for deploying a webservice (backend for a site for example) cloud deployment seems more natural.
