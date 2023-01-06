@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon -L index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "build:ui": "rm -rf build && cd phonebook_ui/ && npm install",
+    "build:ui": "rm -rf build",
     "build": "npm run build:ui",
     "deploy": "fly deploy",
     "deploy:full": "npm run build && npm run deploy",
