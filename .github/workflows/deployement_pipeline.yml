@@ -30,15 +30,15 @@ jobs:
       - name: test
         run: npm run test
   
-#  deploy_release:
-#    needs: [simple_testing_pipeline]
-#    runs-on: ubuntu-20.04
-#    if: ${{ github.event_name == 'push'  &&
-#        contains(join(toJson(github.event.commits.*.message), ' '), '#skip') != true }}
-#    steps:
-#      - uses: actions/checkout@v3
-#        with:
-#          fetch-depth: '0'
-#      - uses: superfly/flyctl-actions/setup-flyctl@master
-#      - name: fly deploy
-#        run: flyctl deploy --remote-only
+  deploy_release:
+    needs: [simple_testing_pipeline]
+    runs-on: ubuntu-20.04
+    if: ${{ github.event_name == 'push'  &&
+        contains(join(toJson(github.event.commits.*.message), ' '), '#skip') != true }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - name: fly deploy
+        run: flyctl deploy --remote-only
