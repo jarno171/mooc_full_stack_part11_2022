@@ -19,9 +19,6 @@ COPY . .
 
 RUN npm install
 
-RUN npm config set user 0
-RUN npm config set unsafe-perm true
-
 RUN npm run build
 
 FROM debian:bullseye
