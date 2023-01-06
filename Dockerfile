@@ -19,8 +19,7 @@ COPY . .
 
 RUN npm install
 
-RUN chmod +x app/node_modules/.bin/*
-RUN chmod +x app/phonebook_ui/node_modules/.bin/*
+RUN chmod +x node_modules/.bin/*
 
 RUN npm run build
 
