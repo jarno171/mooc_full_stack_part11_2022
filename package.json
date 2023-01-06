@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarno171/mooc_full_stack__part3_2022.git"
+    "url": "git+https://github.com/jarno171/mooc_full_stack_part11_2022.git"
   },
   "author": "jarno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jarno171/mooc_full_stack__part3_2022/issues"
+    "url": "https://github.com/jarno171/mooc_full_stack_part11_2022/issues"
   },
-  "homepage": "https://github.com/jarno171/mooc_full_stack__part3_2022#readme",
+  "homepage": "https://github.com/jarno171/mooc_full_stack_part11_2022#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
