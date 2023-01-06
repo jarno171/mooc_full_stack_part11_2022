@@ -17,7 +17,13 @@ ENV NODE_ENV production
 
 COPY . .
 
-RUN npm install && npm run build
+RUN npm install
+
+RUN chmod +x app/node_modules/.bin/*
+RUN chmod +x app/phonebook_ui/node_modules/.bin/*
+
+RUN npm run build
+
 FROM debian:bullseye
 
 COPY --from=builder /root/.volta /root/.volta
