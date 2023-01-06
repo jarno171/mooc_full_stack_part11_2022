@@ -1,6 +1,6 @@
-# fly.toml file generated for wandering-sunset-26 on 2022-10-28T15:25:32Z
+# fly.toml file generated for muddy-morning-5650 on 2023-01-06T08:13:29Z
 
-app = "wandering-sunset-26"
+app = "muddy-morning-5650"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
