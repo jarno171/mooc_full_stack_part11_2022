@@ -28,7 +28,7 @@ const morganCustom = morgan(function (tokens, req, res) {
 
 // health-check for deployement
 app.get('/health', (req, res) => {
-  res.send('k')
+  res.send('ok')
 })
 
 // load middleware
